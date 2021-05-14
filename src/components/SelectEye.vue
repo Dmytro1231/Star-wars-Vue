@@ -16,7 +16,7 @@
         alt="arrowOnDiv"
         class="arrow-on-div"
         width="9"
-        height="18px"
+        height="18"
       />
     </div>
     <i class="arrow down" @click="areOptionsVisible = !areOptionsVisible"></i>
@@ -54,7 +54,7 @@ export default {
 <style lang="scss" scoped>
 .v-select {
   position: relative;
-  width: 100px;
+  width: 95px;
   cursor: pointer;
   margin-right: 18px;
   .title {

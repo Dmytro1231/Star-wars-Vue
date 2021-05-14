@@ -110,8 +110,6 @@ import SelectSort from "./SelectSort.vue";
 export default {
   data() {
     return {
-      select: "",
-      selectSort: "",
       height: {
         title: "Height",
         min: 96,
@@ -122,7 +120,6 @@ export default {
         min: 12,
         max: 112,
       },
-      areOptionsVisible: false,
       areOptionsVisibleHeight: false,
       areOptionsVisibleAge: false,
     };
@@ -162,34 +159,10 @@ export default {
       margin-bottom: 3px;
       margin-left: 11px;
     }
-    .select p {
-      margin: 0;
-      padding-bottom: 8px;
-      padding-top: 15px;
-    }
-    .options {
-      position: absolute;
-      top: 50px;
-      right: 0;
-      width: 100%;
-      background-color: white;
-      box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.04);
-      border-radius: 6px;
-    }
-    .options p:hover {
-      background: #e7e7e7;
-    }
-
     .select-height {
       position: relative;
       border-radius: 6px;
       cursor: pointer;
-
-      .title-height {
-        font-size: 14px;
-        color: rgba(0, 0, 0, 0.8);
-        text-align: left;
-      }
     }
     .select-height p {
       font-size: 14px;
@@ -237,11 +210,6 @@ export default {
       position: relative;
       border-radius: 6px;
       cursor: pointer;
-
-      .title-age {
-        font-size: 14px;
-        color: rgba(0, 0, 0, 0.8);
-      }
     }
     .select-age p {
       margin: 0;
@@ -300,33 +268,6 @@ export default {
       font-weight: normal;
     }
   }
-  &-parameters span {
-    padding-right: 40px;
-  }
-  .options-sort {
-    margin-right: 160px;
-    .title-sort {
-      font-size: 14px;
-      display: contents;
-    }
-
-    img {
-      display: none;
-    }
-  }
-}
-.select {
-  border: none;
-  outline: none;
-  font-size: 14px;
-
-  .option {
-    border: none;
-    outline: none;
-  }
-}
-select:first-child {
-  margin-right: 40px;
 }
 
 @media only screen and (max-width: 670px) {
